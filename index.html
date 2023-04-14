@@ -71,9 +71,8 @@
        
       }
       .description {
-       padding: 20px 75px 20px 20px;
-       display: block;
-       margin-top: 75px;
+       text-align: center;
+       margin-top: 50px;
        font-size: 24px;
       }
       .favorite-drink {
@@ -121,7 +120,7 @@
         list-style: none;
       }
       @media(max-width: 900px) {
-        h1 h2 h3 h4 {
+        h1, h2, h3, h4 {
           font-size: 40px;
         }
         h1 {
@@ -142,7 +141,16 @@
         .description {
           text-align: center;
         }
+        .navbar {
+          display: none;
+        }
 
+      }
+      @media (max-width:280px) {
+        
+        img {
+          width: 200px;
+        }
       }
     </style>
 
@@ -179,12 +187,13 @@
                   <a class="nav-link" href="https://www.fengchausa.com/order" target="_blank">LOCATIONS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://www.facebook.com/FengChaBayArea" target="_blank">FACEBOOK</a>
+                  <a class="nav-link" href="https://www.fengchausa.com/contact-us" target="_blank">CONTACT</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
+        
 
         <div class="headers">
           <h1>Feng Cha</h1>
@@ -193,12 +202,12 @@
       </div>
       <div class="row">
         <h2 class="mb-4">About Feng Cha</h2>
-        <div class="col">
+        <div class="col-md-6">
       <div class="image-slider">
         <img name="slide" width="300px" height="400px" />
       </div>
     </div>
-    <div class="col description" >
+    <div class="col-md-6 description" >
       <p>
       Our passion for making tea extends far beyond our drinks. All of our stores strive their best to provide a comfy teahouse experience to our customers. In Feng Cha, we always working hard on finding good ingredients to make our quality drinks and fine pastries, even the music that you hear in store is carefully chosen to ensure a relaxing in-store experience.
 
