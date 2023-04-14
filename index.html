@@ -25,8 +25,9 @@
           ),
           url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/144/original/feng-cha-img1.jpeg?1680576690");
         background-size: cover;
-        background-repeat: no-repeat;
         background-position: center 55%;
+        background-repeat: no-repeat;
+       
         width: 100%;
         height: 1200px;
         margin-bottom: 50px;
@@ -77,7 +78,7 @@
       .favorite-drink {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 20px;
+        margin-top: 50px;
         margin-bottom: 30px;
       }
       .favorite-drink-description {
@@ -91,6 +92,7 @@
         display: block;
         margin: auto;
         margin-bottom: 100px;
+        margin-top: 50px;
       }
       .featured {
         display: flex;
@@ -112,10 +114,16 @@
       }
       hr {
         color:#f7e8f0;
-      }
+      } 
       footer a {
         color:#f7e8f0;
+        text-decoration: underline;
       }
+      footer li {
+        color:#f7e8f0;
+        list-style: none;
+      }
+      @media(max-width: 900px)
     </style>
 
     <title>FENG CHA</title>
@@ -183,7 +191,7 @@
     </div>
       
         <h2> My favourite drink</h2>
-        <div class="favorite-drink">
+        <div class="favorite-drink ">
           <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/813/original/oreo-cheese-milk-tea.jpg?1681369430" alt="" height="400px" width="300px">
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/815/original/oreo-drink.jfif?1681370944" alt="" height="400px" width="300px">
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/816/original/download.jfif?1681370954" alt="" height="400px" width="300px">
@@ -207,16 +215,36 @@
         <button class="btn btn-light order-button mb-4">
         <a href="https://www.fengchausa.com/order" target="_blank"> Order here</a></button>
         </div>
+        <footer>
         <div class="row">
-          <footer>
             <hr />
             <div class="col-4">
-              <a href="#">Follow on Facebook</a>
-              <a href="#">Check it out on Instagram</a>
-              <a href="#"> Check out our Website</a>
+              <ul>
+                <li>
+              <a href="https://www.facebook.com/FengChaBayArea/" target="_blank">Follow on Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/fengchausa/?hl=en" target="_blank">Check it out on Instagram</a>
+            </li>
+           
+            </ul>
             </div>
-          </footer>
+            <div class="col-4">
+              <ul>
+              <li>This Page was coded by Megan Jackson and is open-sourced on <a href="https://github.com/66Meg20/favorite-restaurant-project" target="_blank">GitHub</a> </li>
+            </ul>
+            </div>
+            <div class="col-4">
+              <ul>
+                <li> 
+                  <a href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank"> Learn more about boba tea</a>
+                  <li>
+                    <a href="https://www.fengchausa.com/" target="_blank"> Check out our Website</a></li>
+                </li>
+              </ul>
+            </div>
         </div>
+      </footer>
         
       
     </div>
