@@ -12,11 +12,11 @@
     />
     <style>
       body {
-        background: #fdc7ff;
+        background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
       }
       .container {
         max-width: 1900px;
-        background: #fdc7ff;
+        
       }
       .header {
         background-image: linear-gradient(
@@ -42,6 +42,12 @@
         color: #f7e8f0;
         font-size: 80px;
       }
+      h4 {
+        color: #f7e8f0;
+      }
+      p {
+        color:#f7e8f0;
+      }
 
       .logo {
         max-width: 150px;
@@ -55,7 +61,6 @@
         padding: 0 15px;
       }
       .image-slider {
-        border: 1rem solid;
         width: 400px;
         display: block;
         margin: auto;
@@ -77,9 +82,39 @@
       }
       .favorite-drink-description {
         width: 400px;
-        height: 400px;
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+      }
+      .popular-img {
+        width: 500px;
         display: block;
         margin: auto;
+        margin-bottom: 100px;
+      }
+      .featured {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+       
+      }
+      img {
+        border: 10px solid white;
+        border-radius: 8px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .order-button {
+        display: block;
+        margin:0 auto;
+      }
+      hr {
+        color:#f7e8f0;
+      }
+      footer a {
+        color:#f7e8f0;
       }
     </style>
 
@@ -136,13 +171,14 @@
       </div>
     </div>
     <div class="col-6 description" >
+      <p>
       Our passion for making tea extends far beyond our drinks. All of our stores strive their best to provide a comfy teahouse experience to our customers. In Feng Cha, we always working hard on finding good ingredients to make our quality drinks and fine pastries, even the music that you hear in store is carefully chosen to ensure a relaxing in-store experience.
 
       We are happy to see people of all ages, different backgrounds coming to Feng Cha to chat, hang out, study and work. We are thankful for each everyone's support and will continue working hard to provide a unique and cozy teahouse experience.
-      
+      </p>
       
 
-<button class="btn btn-dark"> <a href="https://www.fengchausa.com/about-us" target="_blank">Learn More</a></button> 
+<button class="btn btn-light"> <a href="https://www.fengchausa.com/about-us" target="_blank">Learn More</a></button> 
     </div>
     </div>
       
@@ -155,7 +191,32 @@
         <div class="favorite-drink-description">
           <h4>OREO CHEESE MILK TEA, it's a classic milk tea with a cheese foam and crushed oreos on top 😍</h4>
         </div>
+      
+        <h2>Featured Drinks</h2>
         
+        <div class="popular-img">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/955/original/popular-drinks.jpg?1681440706" alt="" width="500px" height="500px">
+        </div>
+      </div>
+        <div class="featured">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/951/original/images.jfif?1681440664" alt="" width="400px" height="400px">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/953/original/dirty-boba.jpg?1681440684" alt="" width="400px" height="400px">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/952/original/images_%284%29.jfif?1681440672" alt="" width="400px" height="400px">
+          
+        </div>
+        <button class="btn btn-light order-button mb-4">
+        <a href="https://www.fengchausa.com/order" target="_blank"> Order here</a></button>
+        </div>
+        <div class="row">
+          <footer>
+            <hr />
+            <div class="col-4">
+              <a href="#">Follow on Facebook</a>
+              <a href="#">Check it out on Instagram</a>
+              <a href="#"> Check out our Website</a>
+            </div>
+          </footer>
+        </div>
         
       
     </div>
