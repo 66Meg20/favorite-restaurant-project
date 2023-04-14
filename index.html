@@ -13,6 +13,8 @@
     <style>
       body {
         background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+        overflow-x: hidden;
+       
       }
       .container {
         max-width: 1900px;
@@ -27,7 +29,6 @@
         background-size: cover;
         background-position: center 55%;
         background-repeat: no-repeat;
-       
         width: 100%;
         height: 1200px;
         margin-bottom: 50px;
@@ -54,6 +55,7 @@
         max-width: 150px;
         padding: 20px;
         display: inline-block;
+        border: none;
       }
       .nav-link {
         color: #fdc7ff !important;
@@ -62,11 +64,10 @@
         padding: 0 15px;
       }
       .image-slider {
-        width: 400px;
-        display: block;
-        margin: auto;
+       text-align: center;
         margin-top: 50px;
         margin-bottom: 200px;
+       
        
       }
       .description {
@@ -82,15 +83,10 @@
         margin-bottom: 30px;
       }
       .favorite-drink-description {
-        width: 400px;
-        height: 250px;
-        display: block;
-        margin: 0 auto;
+        text-align: center;
       }
       .popular-img {
-        width: 500px;
-        display: block;
-        margin: auto;
+        text-align: center;
         margin-bottom: 100px;
         margin-top: 50px;
       }
@@ -103,6 +99,7 @@
       img {
         border: 10px solid white;
         border-radius: 8px;
+         
       }
       a {
         text-decoration: none;
@@ -123,7 +120,30 @@
         color:#f7e8f0;
         list-style: none;
       }
-      @media(max-width: 900px)
+      @media(max-width: 900px) {
+        h1 h2 h3 h4 {
+          font-size: 40px;
+        }
+        h1 {
+          margin-top: 75px;
+        }
+        .popular-img {
+          display: none;
+          margin-bottom: 0px;
+        }
+        
+        .secondary-img {
+          display: none;
+        }
+        .image-slider {
+          margin: auto;
+          margin-bottom: 0px;
+        }
+        .description {
+          text-align: center;
+        }
+
+      }
     </style>
 
     <title>FENG CHA</title>
@@ -133,7 +153,7 @@
       <div class="header">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="https://www.fengchausa.com/" target="_blank"
               ><img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/787/original/feng-cha-logo.jpg?1680927947"
                 alt=""
@@ -172,13 +192,13 @@
         </div>
       </div>
       <div class="row">
-        <h2>About Feng Cha</h2>
-        <div class="col-6">
+        <h2 class="mb-4">About Feng Cha</h2>
+        <div class="col">
       <div class="image-slider">
-        <img name="slide" width="400px" height="500px" />
+        <img name="slide" width="300px" height="400px" />
       </div>
     </div>
-    <div class="col-6 description" >
+    <div class="col description" >
       <p>
       Our passion for making tea extends far beyond our drinks. All of our stores strive their best to provide a comfy teahouse experience to our customers. In Feng Cha, we always working hard on finding good ingredients to make our quality drinks and fine pastries, even the music that you hear in store is carefully chosen to ensure a relaxing in-store experience.
 
@@ -192,28 +212,28 @@
       
         <h2> My favourite drink</h2>
         <div class="favorite-drink ">
-          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/813/original/oreo-cheese-milk-tea.jpg?1681369430" alt="" height="400px" width="300px">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/815/original/oreo-drink.jfif?1681370944" alt="" height="400px" width="300px">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/816/original/download.jfif?1681370954" alt="" height="400px" width="300px">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/815/original/oreo-drink.jfif?1681370944" alt="" class="secondary-img">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/813/original/oreo-cheese-milk-tea.jpg?1681369430" alt="">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/816/original/download.jfif?1681370954" alt="" class="secondary-img">
         </div>
-        <div class="favorite-drink-description">
+        <div class="favorite-drink-description mb-4">
           <h4>OREO CHEESE MILK TEA, it's a classic milk tea with a cheese foam and crushed oreos on top 😍</h4>
         </div>
       
         <h2>Featured Drinks</h2>
         
         <div class="popular-img">
-          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/955/original/popular-drinks.jpg?1681440706" alt="" width="500px" height="500px">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/955/original/popular-drinks.jpg?1681440706" alt="">
         </div>
       </div>
         <div class="featured">
-          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/951/original/images.jfif?1681440664" alt="" width="400px" height="400px">
-          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/953/original/dirty-boba.jpg?1681440684" alt="" width="400px" height="400px">
-          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/952/original/images_%284%29.jfif?1681440672" alt="" width="400px" height="400px">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/951/original/images.jfif?1681440664" alt="" class="shown-img">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/953/original/dirty-boba.jpg?1681440684" alt="" class="secondary-img">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/977/original/images_%281%29.jfif?1681451299" alt="" class="secondary-img">
           
         </div>
         <button class="btn btn-light order-button mb-4">
-        <a href="https://www.fengchausa.com/order" target="_blank"> Order here</a></button>
+        <a href="https://www.fengchausa.com/order" target="_blank"> Order Here</a></button>
         </div>
         <footer>
         <div class="row">
@@ -239,7 +259,7 @@
                 <li> 
                   <a href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank"> Learn more about boba tea</a>
                   <li>
-                    <a href="https://www.fengchausa.com/" target="_blank"> Check out our Website</a></li>
+                    <a href="https://www.fengchausa.com/" target="_blank"> Check out Feng Cha's Website</a></li>
                 </li>
               </ul>
             </div>
